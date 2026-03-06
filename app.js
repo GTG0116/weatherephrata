@@ -29,7 +29,7 @@ const MY_CUSTOM_FORECAST = {
 // Config: Default to Akron, PA
 const LAT = 40.0865;
 const LON = -76.2012;
-const GOOGLE_POLLEN_API_KEY = 'YOUR_GOOGLE_API_KEY_HERE';
+const GOOGLE_POLLEN_API_KEY = 'AIzaSyBAjoVkrRrLPzv9MSrlWaWTFELT8KpJ41E';
 
 // ==========================================================
 // 2. RENDER CUSTOM FORECASTS
