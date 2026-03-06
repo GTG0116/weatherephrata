@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+    <div class="app-container">
+        <header class="current-weather">
+            <h1 id="city-name">Akron, PA</h1>
+            <h2 id="current-temp">--°</h2>
+            <p id="current-condition">Loading conditions...</p>
+            <div class="high-low">
+                <span>H: <span id="current-high">--</span>°</span>
+                <span>L: <span id="current-low">--</span>°</span>
+            </div>
+        </header>
+
+        <section class="glass-panel aqi-pollen-panel">
+            <div class="widget-half">
+                <h3><i class="icon-leaf"></i> Air Quality</h3>
+                <p id="aqi-value" class="large-text">--</p>
+            </div>
+            <div class="divider"></div>
+            <div class="widget-half">
+                <h3><i class="icon-flower"></i> Pollen</h3>
+                <p id="pollen-value" class="large-text">--</p>
+            </div>
+        </section>
+
+        <section class="glass-panel">
+            <h3>Hourly Forecast</h3>
+            <div class="hourly-container" id="hourly-forecast">
+                </div>
+        </section>
+
+        <section class="glass-panel">
+            <h3>10-Day Forecast</h3>
+            <div class="daily-container" id="daily-forecast">
+                </div>
+        </section>
+
+        <section class="glass-panel map-panel">
+            <h3>Live Radar</h3>
+            <div id="radar-map"></div>
+            <div class="map-controls">
+                <span id="radar-time">Loading radar...</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
