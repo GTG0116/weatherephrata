@@ -1,0 +1,88 @@
+:root {
+    --bg-gradient: linear-gradient(160deg, #1d4b8f 0%, #0a1f44 100%);
+    --glass-bg: rgba(0, 0, 0, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.15);
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg-gradient);
+    color: white;
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.current-weather {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.current-weather h1 { margin: 0; font-size: 34px; font-weight: 400; }
+.current-weather h2 { margin: 5px 0; font-size: 86px; font-weight: 200; }
+.current-weather p { margin: 0; font-size: 20px; font-weight: 500; }
+.high-low { font-size: 18px; margin-top: 5px; opacity: 0.9; }
+
+/* Glassmorphism Panels */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.glass-panel h3 {
+    margin-top: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* AQI & Pollen Widget */
+.aqi-pollen-panel { display: flex; justify-content: space-between; align-items: center; }
+.widget-half { flex: 1; text-align: center; }
+.divider { width: 1px; height: 50px; background: var(--glass-border); }
+.large-text { font-size: 24px; font-weight: 600; margin: 5px 0 0 0; }
+
+/* Hourly Forecast */
+.hourly-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Firefox */
+}
+.hourly-container::-webkit-scrollbar { display: none; } /* Safari/Chrome */
+.hourly-item { display: flex; flex-direction: column; align-items: center; min-width: 50px; }
+.custom-icon { width: 30px; height: 30px; margin: 10px 0; object-fit: contain; }
+
+/* 10-Day Forecast */
+.daily-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.daily-item:last-child { border-bottom: none; }
+.daily-day { width: 50px; font-weight: 500; }
+.daily-temps { display: flex; gap: 15px; width: 80px; justify-content: flex-end; }
+.temp-low { opacity: 0.6; }
+
+/* Radar Map */
+.map-panel { padding: 0; overflow: hidden; }
+.map-panel h3 { padding: 16px 16px 0 16px; }
+#radar-map { height: 300px; width: 100%; z-index: 1; border-radius: 0 0 20px 20px; }
+.map-controls { padding: 10px 16px; font-size: 12px; text-align: center; opacity: 0.8; }
