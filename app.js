@@ -5,24 +5,24 @@
 // ==========================================================
 const MY_CUSTOM_FORECAST = {
     hourly: [
-        { time: "Now", temp: 68, icon: "icons/sun.png" },
-        { time: "1 PM", temp: 70, icon: "icons/sun-cloud.png" },
-        { time: "2 PM", temp: 72, icon: "icons/cloud.png" },
-        { time: "3 PM", temp: 71, icon: "icons/rain.png" },
-        { time: "4 PM", temp: 68, icon: "icons/rain.png" },
-        { time: "5 PM", temp: 65, icon: "icons/cloud.png" }
+        { time: "9 PM", temp: 43, icon: "icons/thunderstorms.png" },
+        { time: "10 PM", temp: 41, icon: "icons/thunderstorms.png" },
+        { time: "11 PM", temp: 41, icon: "icons/rain.png" },
+        { time: "12 AM", temp: 40, icon: "icons/cloud.png" },
+        { time: "1 AM", temp: 40, icon: "icons/cloud.png" },
+        { time: "2 AM", temp: 39, icon: "icons/cloud.png" }
     ],
     daily: [
-        { day: "Today", low: 55, high: 72, icon: "icons/sun.png" },
-        { day: "Mon",   low: 52, high: 68, icon: "icons/sun-cloud.png" },
-        { day: "Tue",   low: 50, high: 65, icon: "icons/cloud.png" },
-        { day: "Wed",   low: 48, high: 60, icon: "icons/rain.png" },
-        { day: "Thu",   low: 45, high: 58, icon: "icons/rain.png" },
-        { day: "Fri",   low: 42, high: 62, icon: "icons/sun.png" },
-        { day: "Sat",   low: 44, high: 66, icon: "icons/sun.png" },
-        { day: "Sun",   low: 48, high: 70, icon: "icons/sun-cloud.png" },
-        { day: "Mon",   low: 51, high: 73, icon: "icons/sun.png" },
-        { day: "Tue",   low: 54, high: 75, icon: "icons/sun.png" }
+        { day: "Friday", low: 39, high: 42, icon: "icons/cloud.png" },
+        { day: "Saturday",   low: 38, high: 57, icon: "icons/cloud.png" },
+        { day: "Sunday",   low: 42, high: 62, icon: "icons/partlysunny.png" },
+        { day: "Monday",   low: 41, high: 68, icon: "icons/sun.png" },
+        { day: "Tuesday",   low: 48, high: 75, icon: "icons/sun.png" },
+        { day: "Wednesday",   low: 43, high: 75, icon: "icons/drizzle.png" },
+        { day: "Thursday",   low: 27, high: 42, icon: "icons/partlysunny.png" },
+        { day: "Friday",   low: 27, high: 42, icon: "icons/partlysunny.png" },
+        { day: "Saturday",   low: 34, high: 47, icon: "icons/rain.png" },
+        { day: "Sunday",   low: 35, high: 53, icon: "icons/partlysunny.png" }
     ]
 };
 
